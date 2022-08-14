@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Class 8 - HTML Tables</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        table thead tr th {
+            background-color: goldenrod;
+            height: 50px;
+        }
+
+        table tbody tr td {
+            width: 100px;
+            height: 50px;
+            background-color: red;
+            padding: 10px;
+        }
+
+        table tbody tr td:first-child {
+            background-color: #f2f2f2;
+        }
+
+        table tbody tr td:first-child:not(:empty) {
+            border: 2px solid #000;
+        }
+    </style>
+</head>
+
+<body>
+    <table cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th colspan="3">Welcome!</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Home</td>
+                <td colspan="2" rowspan="5" valign="top">
+                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laboriosam nulla libero sit,
+                            architecto, excepturi autem veritatis reiciendis ducimus doloremque harum assumenda
+                            consequatur perferendis itaque pariatur quis facilis dolores. Numquam!</span><span>Aperiam
+                            sunt, totam tempora architecto sapiente, accusamus velit inventore doloremque laudantium
+                            exercitationem nihil voluptate temporibus minus error illo omnis, ullam nostrum
+                            necessitatibus debitis suscipit eos. Laboriosam repudiandae mollitia hic
+                            eos?</span><span>Explicabo, perferendis cumque eligendi autem exercitationem deleniti
+                            distinctio excepturi. Incidunt provident voluptas rem pariatur necessitatibus impedit,
+                            deserunt voluptate fuga nostrum maxime dolorem obcaecati dolor. Eaque aspernatur tempora
+                            illum ab doloribus.</span></p>
+                    <p><span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem laboriosam nulla libero sit,
+                            architecto, excepturi autem veritatis reiciendis ducimus doloremque harum assumenda
+                            consequatur perferendis itaque pariatur quis facilis dolores. Numquam!</span><span>Aperiam
+                            sunt, totam tempora architecto sapiente, accusamus velit inventore doloremque laudantium
+                            exercitationem nihil voluptate temporibus minus error illo omnis, ullam nostrum
+                            necessitatibus debitis suscipit eos. Laboriosam repudiandae mollitia hic
+                            eos?</span><span>Explicabo, perferendis cumque eligendi autem exercitationem deleniti
+                            distinctio excepturi. Incidunt provident voluptas rem pariatur necessitatibus impedit,
+                            deserunt voluptate fuga nostrum maxime dolorem obcaecati dolor. Eaque aspernatur tempora
+                            illum ab doloribus.</span></p>
+                </td>
+            </tr>
+            <tr>
+                <td>About</td>
+            </tr>
+            <tr>
+                <td>About</td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+            <tr>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>
